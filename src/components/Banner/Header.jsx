@@ -8,13 +8,12 @@ const Header = () => {
     <Container bar={bar}>
         <Logo>
             <span className='green'><GiCandleFlame/></span>
-            <h1>Portfolio</h1>
+            <h1>Tanmay Vig</h1>
         </Logo>
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
             <span><a href="#service">Services</a></span>
             <span><a href="#project">Projects</a></span>
-            <span><a href="#client">Testimonials</a></span>
             <span><a href="#footer">Portfolio</a></span>
         </Nav>
         <div

@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-
+import pic from './self.jpeg'
 const ProfComponent = () => {
   return (
     <Container id="home">
@@ -13,29 +12,23 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Milad Amiri</h1>
-          <h3>UX/UI Designer and graphic designer</h3>
+          <h1 className="green">Tanmay Vig</h1>
+          <h3>Frontend Developer and Stock Market trader</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            I am a Frontend Web Developer and an active trader in Stock Market.
+            <br /> I am currently pursuing Integrated Mtech from JIIT. 
           </p>
           <button>Let's talk</button>
           <Social>
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="/">
+                <a href="https://www.instagram.com/tanmayvig/">
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span>
-                <a href="/">
-                  <GiEarthAmerica />
-                </a>
-              </span>
-              <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/tanmay-vig-7bba51224">
                   <FaLinkedinIn />
                 </a>
               </span>
@@ -46,8 +39,9 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
+            src={pic}
             alt="profile"
+            height={400}
           />
         </Profile>
       </Slide>

@@ -4,8 +4,8 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
-import { FiMail, FiPhoneCall } from "react-icons/fi";
+
+import { FiMail } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
 const Footer = () => {
@@ -21,26 +21,10 @@ const Footer = () => {
         <Slide direction="left" delay={1}>
           <h1>Portfolio</h1>
         </Slide>
-        <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide>
-        </div>
         <div className="links">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
           </Slide>
-          <div>
-            <span>
-              <FiPhoneCall />
-            </span>
-            <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
-            </Slide>
-          </div>
           <div>
             <Slide direction="left">
               <span>
@@ -48,7 +32,7 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:cooltanmayvig@gmail.com">cooltanmayvig@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -59,29 +43,15 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/tanmay-vig">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/tanmay-vig-7bba51224/">
                   <AiFillLinkedin />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
                 </a>
               </span>
             </Zoom>
