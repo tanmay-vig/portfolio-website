@@ -1,0 +1,25 @@
+.tool-card {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.tool-card img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    margin: 10px auto;
+    display: block;
+}
+
+.tool-card .card-title {
+    font-size: 1rem;
+    color: black;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
