@@ -1,5 +1,5 @@
-import React from 'react';
-import Navbar from './components/Navbar';
+
+import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Achievements from './components/Achievements';
 import Experience from './components/Experience';
@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <>
-      <Navbar />
+      <Navigation />
       <Hero />
       <Achievements />
       <Experience />
