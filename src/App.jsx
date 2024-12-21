@@ -8,9 +8,11 @@ import Projects from './components/Projects';
 import Positions from './components/Positions';
 import Contact from './components/Contact';
 
+import './App.css'
+
 function App() {
   return (
-    <>
+    <div className='bg-black text-white'>
       <Navigation />
       <Hero />
       <Achievements />
@@ -19,7 +21,7 @@ function App() {
       <Projects />
       <Positions />
       <Contact />
-    </>
+    </div>
   );
 }
 

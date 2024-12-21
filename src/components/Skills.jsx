@@ -1,5 +1,4 @@
-// src/components/Tools.jsx
-import React from "react";
+// src/components/Tools.js
 import { motion } from "framer-motion";
 
 import "../styles/Skills.css";
@@ -46,7 +45,7 @@ function Skills() {
     
 
     <section id="tools" className="container py-5">
-    <h2 className="text-center mb-4">Tools & Technologies</h2>
+    <h2 className="text-center my-4">Tools & Technologies</h2>
     <div className="row g-4">
       {tools.map((tool, index) => (
         <div className="col-6 col-sm-4 col-md-3" key={index}>
