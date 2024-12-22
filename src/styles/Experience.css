@@ -1,0 +1,85 @@
+.experience-section {
+  padding: 50px 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 20px;
+  border-left: 2px solid #444;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #ff6f61;
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 0;
+}
+
+.timeline-content {
+  margin-left: 30px;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.timeline-company {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.timeline-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 15px;
+    border-left: 1px solid #444;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+    left: -7px;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+  }
+}
