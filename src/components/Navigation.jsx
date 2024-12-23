@@ -23,7 +23,7 @@ function Navigantion() {
         <Navbar.Brand href="#home" className="brand">Tanmay Vig</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : true)} />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto fw-bold">
             <Nav.Link href="#hero" onClick={handleNavClick}>Home</Nav.Link>
             <Nav.Link href="#achievements" onClick={handleNavClick}>Achievements</Nav.Link>
             <Nav.Link href="#experience" onClick={handleNavClick}>Experience</Nav.Link>

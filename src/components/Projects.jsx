@@ -2,12 +2,14 @@
 import '../styles/Projects.css';
 
 const projects = [
-  { id: 1, title: 'Portfolio Website', description: 'A responsive and modern portfolio website built with React, Vite, and Framer Motion.', link: '#' },
-  { id: 2, title: 'Chatbot Application', description: 'An AI-powered chatbot using NLP and Langchain.', link: '#' },
-  { id: 3, title: 'E-commerce Platform', description: 'A full-stack e-commerce platform built with MERN stack.', link: '#' },
-  { id: 4, title: 'Weather App', description: 'A weather forecasting app using OpenWeather API.', link: '#' },
-  { id: 5, title: 'Blog CMS', description: 'A content management system for blogs with Django.', link: '#' },
-  { id: 6, title: 'AI Image Generator', description: 'An AI-based image generation tool using OpenAI API.', link: '#' },
+  { id: 1, title: 'RESEARCH ENGINE', description: 'Developed an AI Driven research engine for Commercial Courts for helping Judges, Judicial Executives and Lawyers', link: 'https://github.com/tanmay-vig/ai-driven-research-engine' },
+  { id: 2, title: 'Churn Lens', description: 'Predicted the Customer Churn Prediction for Banks using ANN ', link: 'https://github.com/tanmay-vig/customer-churn-prediction' },
+  { id: 5, title: 'Multilingual Invoice Extractor', description: 'Created a Multilingual Invoice for all languages using Gemini and Streamlit.', link: 'https://github.com/tanmay-vig/multi-language-invoice-extractor' },
+  { id: 6, title: 'RAMSA 2024', description: 'Developed a Website on Recent 7th International Conference on Recent Advances in Mathematical Sciences and its Applications (RAMSA - 2024) for Department of Mathematics,Jaypee Institute of Information Technology (JIIT Noida, U.P.)', link: 'https://ramsa.netlify.app/' },
+  {id: 8 , title: 'Crypto Hunter', description: 'Developed a website for tracking all the prices of the cryptocurrency in INR and USDT using Coingecko API and Chart.js for Charts' , link: 'https://github.com/tanmay-vig/react-crypto-tracker'},
+  {id : 7 ,title: 'Community Detection and Recommendation' , description: 'Identified communities, top innfluencing nodes, predicted friends and predicted content in Facebook Snap Dataset', link: 'https://github.com/tanmay-vig/Community-Detection-and-Recommendation'},
+  { id: 3, title: 'Smart ATS', description: 'An ats software using Gemini and Streamlit', link: 'https://github.com/tanmay-vig/ats-tracking-system' },
+  { id: 4, title: 'Mediater', description: 'A landing site for Mediater using React, Framer and Bootstrap', link: 'https://mediater.netlify.app/' },
 ];
 
 function Projects() {
