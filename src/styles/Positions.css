@@ -1,0 +1,48 @@
+.position-card {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.position-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.position-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.position-organization {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.position-description {
+    font-size: 0.95rem;
+    color: #fefefe;
+}
+
+@media (max-width: 768px) {
+    .position-card {
+        padding: 15px;
+    }
+
+    .position-title {
+        font-size: 1.1rem;
+    }
+
+    .position-organization {
+        font-size: 1rem;
+    }
+
+    .position-description {
+        font-size: 0.9rem;
+    }
+}
