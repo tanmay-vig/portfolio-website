@@ -2,12 +2,12 @@
 import '../styles/Achievements.css';
 
 const achievements = [
-  { id: 1, title: 'Hackathon Champion', description: 'Won the Global Hackathon 2023 for an AI-based healthcare project.' },
-  { id: 2, title: 'CodeFest Winner', description: 'Secured 1st place in CodeFest 2023 for a blockchain-based supply chain solution.' },
-  { id: 3, title: 'InnovateX Hackathon', description: 'Developed a cloud computing platform, winning the InnovateX 2022 Hackathon.' },
-  { id: 4, title: 'Hack4Good', description: 'Built a social impact platform and won Hack4Good 2022.' },
-  { id: 5, title: 'TechChallenge 2021', description: 'Created a fintech app and won TechChallenge 2021.' },
-  { id: 6, title: 'AI Hackathon', description: 'Won the AI Hackathon 2021 with an ML-powered recommendation system.' },
+  { id: 1, title: 'SIH 2024 WINNER', description: 'Won the Smart India Hackathon 2024 for the Problem ID 1670 by UIDAI.' },
+  { id: 2, title: 'HACKSTREET 2.0 WINNER', description: 'Secured 1st place in HackStreet 2.0 2024 for a reducing Vehicular Pollution solution.' },
+  { id: 3, title: 'NEXTECH RUNNER UP', description: 'Developed an solution for smart monitoring of vehicular pollution.' },
+  { id: 4, title: 'FINTESTICO 2023 RUNNER UP', description: 'Built an platform to monitor and safegaurd people from Spam Emails, SMS and Websites.' },
+  { id: 5, title: 'CODEJAM 2023 RUNNER UP ', description: 'Created a Retro-Styled app for Snake, Tetris and Flappy Bird game.' },
+  { id: 6, title: 'TECHHACKS 3.0 WINNER', description: 'Developed an IOT solution for monitoring the vehicular emissions.' },
 ];
 
 function Achievements() {

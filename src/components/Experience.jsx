@@ -3,22 +3,22 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
-    title: 'Frontend Developer Intern',
+    title: 'IBM Data Analyst Intern',
+    company: 'IBM',
+    date: 'July 2024 - August 2024',
+    description: 'Worked on data visualization and predictive analysis using Python and Excel.',
+  },
+  {
+    title: 'Full Stack Developer Intern',
     company: 'OctaNet Services',
-    date: 'June 2024 - August 2024',
+    date: 'June 2024 - July 2024',
     description: 'Developed a to-do list app and a full-stack landing site using React and Node.js.',
   },
   {
-    title: 'IBM Data Analyst Intern',
-    company: 'IBM',
-    date: 'March 2024 - May 2024',
-    description: 'Worked on data visualization and predictive analysis using Python and Tableau.',
-  },
-  {
-    title: 'AI Project Contributor',
-    company: 'Personal Project',
-    date: '2023 - 2024',
-    description: 'Developed an AI-driven Legal Research Engine for judiciary applications using NLP.',
+    title: 'Frontend Developer Intern',
+    company: 'Maharishi Technologies',
+    date: 'June 2023 - July 2023',
+    description: 'Devloped a Landing Site for Bliss Infosystems Pvt. Ltd. which enchanced customer experience and sales of the company',
   },
 ];
 
