@@ -3,6 +3,7 @@ import '../styles/Projects.css';
 
 const projects = [
   { id: 1, title: 'RESEARCH ENGINE', description: 'Developed an AI Driven research engine for Commercial Courts for helping Judges, Judicial Executives and Lawyers', link: 'https://github.com/tanmay-vig/ai-driven-research-engine' },
+  {id : 9, title: "Next Word Prediction", description : "The Next Word Prediction App is a Streamlit-based application that uses an LSTM model to predict the next word in a sequence of words. This project uses Shakespeare's Hamlet text for training and demonstrates the power of deep learning in natural language processing (NLP).", link : "https://github.com/tanmay-vig/next-word-prediction" },
   { id: 2, title: 'Churn Lens', description: 'Predicted the Customer Churn Prediction for Banks using ANN ', link: 'https://github.com/tanmay-vig/customer-churn-prediction' },
   { id: 5, title: 'Multilingual Invoice Extractor', description: 'Created a Multilingual Invoice for all languages using Gemini and Streamlit.', link: 'https://github.com/tanmay-vig/multi-language-invoice-extractor' },
   { id: 6, title: 'RAMSA 2024', description: 'Developed a Website on Recent 7th International Conference on Recent Advances in Mathematical Sciences and its Applications (RAMSA - 2024) for Department of Mathematics,Jaypee Institute of Information Technology (JIIT Noida, U.P.)', link: 'https://ramsa.netlify.app/' },
