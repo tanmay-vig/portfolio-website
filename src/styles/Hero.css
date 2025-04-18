@@ -1,7 +1,37 @@
 .hero-section {
-    /* background: linear-gradient(135deg, #0f0f0f, #3f241d); */
     color: #fff;
     padding: 60px 0;
+    background: linear-gradient(135deg, #1e1e1e, #753c2e, #ff6f61);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 6s infinite ease-in-out;
+    z-index: 0;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 8s infinite ease-in-out reverse;
+    z-index: 0;
 }
 
 .hero-container {
@@ -9,21 +39,26 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content {
     max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-title {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 30px;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .hero-btn {
@@ -34,16 +69,19 @@
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: bounce 2s infinite;
 }
 
 .hero-btn:hover {
     background: #5b3f90;
+    transform: scale(1.1);
 }
 
 .hero-image-container {
     position: relative;
     perspective: 1000px;
+    animation: zoomIn 1.5s ease-in-out;
 }
 
 .hero-image {
@@ -55,7 +93,7 @@
 }
 
 .hero-image:hover {
-    transform: rotateY(20deg);
+    transform: rotateY(20deg) scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -83,5 +121,96 @@
 
     .hero-btn {
         font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn {
+        font-size: 0.85rem;
+    }
+
+    .hero-image {
+        width: 200px;
+    }
+}
+
+/* Animations */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
