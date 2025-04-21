@@ -23,7 +23,7 @@
 .achievement-card {
   background: #2e2e2e;
   color: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -108,4 +108,17 @@
   .achievement-description {
     font-size: 0.85rem;
   }
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: #ff6f61;
+  }
+  50% {
+    border-color: #ff3d3d;
+  }
+  100% {
+    border-color: #ff6f61;
+  }
+  
 }

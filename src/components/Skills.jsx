@@ -28,16 +28,16 @@ const tools = [
   { name: 'REACT', image: pic4 },
   { name: 'NODEJS', image: pic5 },
   { name: 'EXPRESS', image: pic6 },
-  { name: 'DJANGO', image: pic7 },
+  // { name: 'DJANGO', image: pic7 },
   { name: 'FLASK', image: pic8 },
   { name: 'MONGODB', image: pic9 },
   { name: 'MYSQL', image: pic10 },
   { name: 'LANGCHAIN', image: pic11 },
-  { name: 'HUGGINFACE', image: pic12 },
+  // { name: 'HUGGINFACE', image: pic12 },
   { name: 'STREAMLIT', image: pic13 },
   { name: 'GIT', image: pic14 },
   { name: 'GITHUB', image: pic15 },
-  { name: 'GITLAB', image: pic16 },
+  // { name: 'GITLAB', image: pic16 },
 ];
 
 function Skills() {
