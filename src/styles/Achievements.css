@@ -1,39 +1,111 @@
+.achievements-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e1e1e, #3f241d);
+  color: #fff;
+}
+
+.achievements-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ff6f61;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  
+}
+
 .achievement-card {
-    background: #2e2e2e;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #2e2e2e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 0;
+}
+
+.achievement-card:hover::before {
+  opacity: 1;
+  
 }
 
 .achievement-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .achievement-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 1;
+  position: relative;
 }
 
 .achievement-description {
-    font-size: 0.95rem;
-    color: #bfbfbf;
+  font-size: 1rem;
+  color: #bfbfbf;
+  z-index: 1;
+  position: relative;
+  text-align: left; /* Default for smaller screens */
+}
+
+@media (min-width: 1024px) {
+  .achievement-description {
+    text-align: justify; /* Justify text for desktop screens */
+  }
 }
 
 @media (max-width: 768px) {
-    .achievement-card {
-        padding: 15px;
-    }
+  .achievements-title {
+    font-size: 2rem;
+  }
 
-    .achievement-title {
-        font-size: 1.1rem;
-    }
+  .achievement-card {
+    padding: 15px;
+  }
 
-    .achievement-description {
-        font-size: 0.9rem;
-    }
+  .achievement-title {
+    font-size: 1.25rem;
+  }
+
+  .achievement-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-title {
+    font-size: 1.8rem;
+  }
+
+  .achievement-title {
+    font-size: 1.1rem;
+  }
+
+  .achievement-description {
+    font-size: 0.85rem;
+  }
 }
