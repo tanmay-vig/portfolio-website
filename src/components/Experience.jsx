@@ -2,6 +2,12 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
+    title: 'Software Developer Intern',
+    company: 'ST Microelectronics Private Limited',
+    date: 'Present',
+    description:'Working in RET OPC Team',
+  },
+  {
     title: 'IBM Data Analyst Intern',
     company: 'IBM',
     date: 'July 2024 - August 2024',
