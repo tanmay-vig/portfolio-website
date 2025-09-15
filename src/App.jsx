@@ -15,10 +15,10 @@ function App() {
     <div className='bg-black text-white'>
       <Navigation />
       <Hero />
-      <Achievements />
       <Experience />
       <Skills />
       <Projects />
+      <Achievements />
       <Positions />
       <Contact />
     </div>
